@@ -70,11 +70,11 @@ function getScalesPerPlayer(playerCount) {
 
 // ✅ NUEVO scoring más estricto: 3 / 8 / 14 / 22
 function scoreFromDistance(d) {
-  if (d <= 3) return 4;
-  if (d <= 8) return 3;
-  if (d <= 14) return 2;
-  if (d <= 22) return 1;
-  return 0;
+  if (d <= 2) return 4;
+  if (d <= 5) return 3;
+  if (d <= 9) return 2;
+  if (d <= 13) return 1;
+  return 0;            
 }
 
 function getTotalPrompts(game) {
